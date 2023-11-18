@@ -1,0 +1,35 @@
+/* 
+#DECAA9 milk tea
+#A4B07E matcha
+#0D2818 forest green
+#6D4930 coffee 
+ */
+
+* {
+  padding: none;
+  margin: none;
+  font-size: none;
+}
+
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid:
+    "header" 10%
+    "body" 90%
+    "." auto
+    / 1fr;
+  gap: 8px;
+}
+
+.head {
+  grid-area: header;
+  background-color: #decaa9;
+  font-size: 50px;
+}
+
+.body {
+  grid-area: body;
+  background-color: #a4b07e;
+}
