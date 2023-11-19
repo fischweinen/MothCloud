@@ -5,10 +5,11 @@
 #6D4930 coffee 
  */
 
-* {
-  padding: none;
-  margin: none;
-  font-size: none;
+.contentContainer {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  background-color: #0d2818;
 }
 
 .layout {
@@ -16,20 +17,54 @@
 
   display: grid;
   grid:
-    "header" 10%
-    "body" 90%
-    "." auto
+    "header" 10vh
+    "overview" 90vh
+    "setup" 100vh
+    "settings" 100vh
+    "members" 100vh
+    "screenshot" 100vh
+    "refrences" 100vh
     / 1fr;
-  gap: 8px;
+
+  gap: 5px;
 }
 
 .head {
+  background-color: #0d2818;
   grid-area: header;
-  background-color: #decaa9;
+  height: 100%;
   font-size: 50px;
+  padding: 15px;
+  color: #decaa9;
 }
 
-.body {
-  grid-area: body;
+.overview {
   background-color: #a4b07e;
+  grid-area: overview;
+  font-size: 25px;
+}
+.setup {
+  background-color: #decaa9;
+  grid-area: setup;
+  font-size: 25px;
+}
+.settings {
+  background-color: #a4b07e;
+  grid-area: settings;
+  font-size: 25px;
+}
+.members {
+  background-color: #decaa9;
+  grid-area: members;
+  font-size: 25px;
+}
+.screenshot {
+  background-color: #a4b07e;
+  grid-area: screenshot;
+  font-size: 25px;
+}
+.refrences {
+  background-color: #decaa9;
+  grid-area: refrences;
+  font-size: 25px;
 }
