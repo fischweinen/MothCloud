@@ -1,15 +1,17 @@
 /* 
-#DECAA9 milk tea
-#A4B07E matcha
-#0D2818 forest green
-#6D4930 coffee 
+#4C2E05 Cafe Noir
+#7A8450 Reseda Green
+#AEBD93 Sage
+#BEE7B8 Celadon
+#95969D Taupe Grey 
  */
 
 .contentContainer {
   padding: 0;
   margin: 0;
   font-size: 0;
-  background-color: #0d2818;
+  background-color: #000000;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
 }
 
 .layout {
@@ -25,46 +27,54 @@
     "screenshot" 100vh
     "refrences" 100vh
     / 1fr;
-
-  gap: 5px;
 }
 
 .head {
-  background-color: #0d2818;
+  background-color: #4c2e05;
   grid-area: header;
   height: 100%;
   font-size: 50px;
   padding: 15px;
-  color: #decaa9;
+  color: #aebd93;
 }
 
 .overview {
-  background-color: #a4b07e;
+  background-color: #7a8450;
   grid-area: overview;
   font-size: 25px;
 }
 .setup {
-  background-color: #decaa9;
+  background-color: #7a8450;
   grid-area: setup;
   font-size: 25px;
 }
 .settings {
-  background-color: #a4b07e;
+  background-color: #7a8450;
   grid-area: settings;
   font-size: 25px;
 }
 .members {
-  background-color: #decaa9;
+  background-color: #7a8450;
   grid-area: members;
   font-size: 25px;
 }
 .screenshot {
-  background-color: #a4b07e;
+  background-color: #7a8450;
   grid-area: screenshot;
   font-size: 25px;
 }
 .refrences {
-  background-color: #decaa9;
+  background-color: #7a8450;
   grid-area: refrences;
   font-size: 25px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+.aMatcha {
+  background-color: #aebd93;
+  justify-self: center;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 15px;
 }
