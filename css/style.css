@@ -35,26 +35,26 @@ html {
 }
 
 .head {
-  align-items: center;
+  display: flex;
   background-color: #4c2e05;
-  height: 100%;
   padding: 15px;
 }
 .head a {
   color: #95969d;
-  display: flex;
   font-size: 15px;
 }
 
 .logo {
-  font-size: 50px;
   color: #aebd93;
+  font-size: 50px;
 }
 
 .navOptions {
   font-size: 25px;
-  text-align: right;
+  transform: translate(750px, 25px);
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
 
 .overview {
   background-color: #7a8450;
