@@ -6,6 +6,10 @@
 #95969D Taupe Grey 
  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contentContainer {
   padding: 0;
   margin: 0;
@@ -19,23 +23,37 @@
 
   display: grid;
   grid:
-    "header" 10vh
-    "overview" 90vh
+    "overview" 100vh
     "setup" 100vh
     "settings" 100vh
     "members" 100vh
     "screenshot" 100vh
-    "refrences" 100vh
+    "refrences" 110vh
     / 1fr;
+
+  gap: 1px;
 }
 
 .head {
+  align-items: center;
   background-color: #4c2e05;
-  grid-area: header;
   height: 100%;
-  font-size: 50px;
   padding: 15px;
+}
+.head a {
+  color: #95969d;
+  display: flex;
+  font-size: 15px;
+}
+
+.logo {
+  font-size: 50px;
   color: #aebd93;
+}
+
+.navOptions {
+  font-size: 25px;
+  text-align: right;
 }
 
 .overview {
@@ -77,4 +95,23 @@
   padding: 10px;
   margin: 15px;
   border-radius: 15px;
+}
+
+.indent {
+  text-indent: 50px;
+}
+
+.refrences a:visited {
+  color: #7a8450;
+  text-decoration: none;
+}
+
+.refrences a:hover {
+  color: #95969d;
+  text-decoration: underline;
+}
+
+.refrences a:active {
+  color: #bee7b8;
+  text-decoration: underline;
 }
