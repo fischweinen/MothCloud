@@ -23,10 +23,11 @@ html {
 
   display: grid;
   grid:
-    "overview" 100vh
-    "setup" 100vh
-    "settings" 100vh
-    "members" 100vh
+  /* can put back gaps deal with that later please */
+    "overview" 45vh
+    "setup" 35vh
+    "settings" 125vh
+    "members" 95vh
     "screenshot" 100vh
     "refrences" 110vh
     / 1fr;
