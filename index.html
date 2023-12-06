@@ -14,7 +14,7 @@
   </head>
 
   <header class="head">
-    <img src="./mothcloud31.png" alt="Our logo" height="85px">
+    <img src="./mothcloud31.png" alt="Our logo" height="85px" />
     <div class="logo">MothCloud</div>
     <div class="navOptions">
       <a href="#overview">Overview</a>
@@ -50,7 +50,13 @@
         <article class="aMatcha">
           <h2>Setup</h2>
           <p>
-            To host a NextCloud server, go to the <a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html">NextCloud Docs</a> and follow their instllation step by step tutorial.
+            To host a NextCloud server, go to the
+            <a
+              target="”_blank”"
+              href="https://nextcloud.com/install/#instructions-server"
+              >NextCloud Docs</a
+            >
+            and use their web installer for easy installation.
           </p>
         </article>
       </div>
@@ -59,23 +65,32 @@
 
       <div class="settings" id="settings">
         <article class="aMatcha">
-          <p>
-            <h3>1. The names of your general user group and your admin group</h3>
-              MothCloud Users
-              MothCloud Admin
-              MothCloud HR
-            <h3>2. The resources that are restricted by your group ownership
-            settings</h3>
-              /
-            <h3>3. What the script in Question 1C automates and where the script is
-            saved on your VM</h3>
-              /
-            <h3>4. Which system features you are logging, how you are logging
-            them, and where the log files are stored</h3>
-              The system features we chose to log are User Access Logs, Disk Space, and Memory Usage. The log files are stored in /var/log
-            <h3>6. Where your backup script is stored and what its backing up</h3>
-              The backup script is stored in the scripting directory. We are backing up all data in the NextCloud server.
-          </p>
+          <h4>1. The names of your general user group and your admin group</h4>
+          MothCloud Users
+          <br />
+          MothCloud Admin
+          <br />
+          MothCloud HR
+          <h4>
+            2. The resources that are restricted by your group ownership
+            settings
+          </h4>
+          /
+          <h4>
+            3. What the script in Question 1C automates and where the script is
+            saved on your VM
+          </h4>
+          /
+          <h4>
+            4. Which system features you are logging, how you are logging them,
+            and where the log files are stored
+          </h4>
+          The system features we chose to log are User Access Logs, Disk Space,
+          and Memory Usage. Using crontab we have scheduled the script to run
+          every six hours. The log files are stored in /var/log.
+          <h4>6. Where your backup script is stored and what its backing up</h4>
+          The backup script is stored in the scripting directory. We are backing
+          up all data in the NextCloud server.
         </article>
       </div>
 
@@ -105,7 +120,11 @@
       <div class="screenshot" id="screenshot">
         <article class="aMatcha">
           <h2>!! MothCloud</h2>
-          <img src="./mothcloud.png" alt="A screenshot of MothCloud in action" height="575px" />
+          <img
+            src="./mothcloud.png"
+            alt="A screenshot of MothCloud in action"
+            width="100%"
+          />
         </article>
       </div>
 

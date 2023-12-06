@@ -24,12 +24,12 @@ html {
   display: grid;
   grid:
   /* can put back gaps deal with that later please */
-    "overview" 45vh
-    "setup" 35vh
+    "overview" 37vh
+    "setup" 26vh
     "settings" 125vh
-    "members" 81vh
-    "screenshot" 100vh
-    "refrences" 110vh
+    "members" 67vh
+    "screenshot" 113vh
+    "refrences" 90vh
     / 1fr;
 
   gap: 1px;
@@ -60,32 +60,32 @@ html {
 .overview {
   background-color: #7a8450;
   grid-area: overview;
-  font-size: 25px;
+  font-size: 20px;
 }
 .setup {
   background-color: #7a8450;
   grid-area: setup;
-  font-size: 25px;
+  font-size: 20px;
 }
 .settings {
   background-color: #7a8450;
   grid-area: settings;
-  font-size: 25px;
+  font-size: 20px;
 }
 .members {
   background-color: #7a8450;
   grid-area: members;
-  font-size: 25px;
+  font-size: 20px;
 }
 .screenshot {
   background-color: #7a8450;
   grid-area: screenshot;
-  font-size: 25px;
+  font-size: 20px;
 }
 .refrences {
   background-color: #7a8450;
   grid-area: refrences;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
@@ -96,6 +96,14 @@ html {
   padding: 10px;
   margin: 15px;
   border-radius: 15px;
+}
+
+.setup a {
+  color: #7a8450;
+}
+
+.setup a:hover {
+  color: #95969d;
 }
 
 .indent {
