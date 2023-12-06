@@ -27,7 +27,7 @@ html {
     "overview" 45vh
     "setup" 35vh
     "settings" 125vh
-    "members" 95vh
+    "members" 81vh
     "screenshot" 100vh
     "refrences" 110vh
     / 1fr;
@@ -52,7 +52,7 @@ html {
 
 .navOptions {
   font-size: 25px;
-  transform: translate(750px, 25px);
+  transform: translate(675px, 25px);
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
