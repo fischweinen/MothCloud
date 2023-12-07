@@ -75,12 +75,28 @@
             2. The resources that are restricted by your group ownership
             settings
           </h4>
-          /
+          The resource that is restricted by our group ownership settings is the
+          mothcloud folder that contains all the nextcloud database, config
+          files, and all hosting information for nextcloud. We created 3 groups,
+          mothcloudadmin, mothcloud-hr and mothcloud-user. By using a command
+          called acl we were able to set specific permissions for each group
+          without making them own it which would have messed up our apache
+          configuration as nextcloud needs to be owned by www-data and part of
+          that group as well. We made it so under acl, mothcloudadmin can
+          read,write and execute; mothcloud-hr can read and execuate; and that a
+          mothcloud-user can't access the files at all.
           <h4>
             3. What the script in Question 1C automates and where the script is
             saved on your VM
           </h4>
-          /
+          The script that is in question 1C is a script to automate the process
+          of updating our static website. We wrote a bash script that git pulls
+          from the repository that our static website is in, and sets the
+          permissions for the website so apache can access the files and then
+          restarts apache to update the website with the new information. After
+          that we used cron to schedule this process to happen every 24 hours.
+          This bash script is located in the home directory as
+          "update-webpage.sh"
           <h4>
             4. Which system features you are logging, how you are logging them,
             and where the log files are stored
